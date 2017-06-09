@@ -1,0 +1,34 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "command": "workbench.action.showCommands",
+        "key": "alt-x"
+    },
+    //ctrl+g cancell stuff
+    {
+        "command": "workbench.action.closeMessages",
+        "key": "escape",
+        "when": "globalMessageVisible"
+    },
+    {
+        "command": "workbench.action.hideInterfaceOverview",
+        "key": "escape",
+        "when": "interfaceOverviewVisible"
+    },
+    {
+        "command": "cancelRenameInput",
+        "key": "escape",
+        "when": "editorFocus && renameInputVisible"
+    },
+    //Formatting
+    {
+        "key": "alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    }
+]
